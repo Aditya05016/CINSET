@@ -1,5 +1,10 @@
 const express = require('express');
 const app = express();
+const connectDb = require('./config/database');
+
+//conect to databse
+
+connectDb();
 
 
 app.use(express.json());

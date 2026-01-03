@@ -1,6 +1,10 @@
 const express = require('express');
 const app = express();
 const connectDb = require('./config/database');
+const showRoutes = require("./routes/show.routes");
+
+app.use("/api/shows", showRoutes);
+
 
 //conect to databse
 
